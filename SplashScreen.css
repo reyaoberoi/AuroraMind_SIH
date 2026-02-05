@@ -1,0 +1,48 @@
+/* SplashScreen.css - Netflix-style AuroraMinds animation */
+
+
+/* Subtle pastel gradient background */
+.splash-bg {
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(600px 200px at 20% 20%, #ff6fcb22, transparent 60%),
+    radial-gradient(600px 200px at 80% 30%, #7f5af022, transparent 60%),
+    linear-gradient(120deg, #f8fafc 0%, #e0eafc 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+.aurora-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Montserrat', 'Segoe UI', sans-serif;
+}
+.aurora-heart-logo {
+  margin-bottom: 2.5rem;
+  filter: drop-shadow(0 0 16px #ff6fcb) drop-shadow(0 0 12px #7f5af0);
+  animation: float 3s ease-in-out infinite;
+}
+.aurora-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #232946;
+  letter-spacing: 0.08em;
+  text-shadow: 0 0 8px #7f5af022;
+  animation: fadeInUp 1s cubic-bezier(.4,0,.2,1);
+}
+.minds-highlight {
+  color: #7f5af0;
+  text-shadow: 0 0 8px #7f5af0;
+}
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
