@@ -1,0 +1,26 @@
+/* src/pages/LoginPage.css */
+/* All old styles are replaced with this single class for the aurora gradient background. */
+
+.aurora-background {
+  background-color: #fce2e6;
+  background-image: radial-gradient(at 20% 15%, hsla(333, 93%, 85%, 1) 0px, transparent 50%),
+    radial-gradient(at 80% 20%, hsla(218, 95%, 80%, 1) 0px, transparent 50%),
+    radial-gradient(at 15% 85%, hsla(355, 93%, 90%, 1) 0px, transparent 50%),
+    radial-gradient(at 85% 90%, hsla(200, 93%, 85%, 1) 0px, transparent 50%);
+}
+
+/* Make login inputs white with soft shadow */
+.login-input, input[type="email"], input[type="text"], input[type="password"] {
+  background: #fff !important;
+  border: 1px solid #e0eafc !important;
+  box-shadow: 0 2px 8px #7f5af022;
+  color: #232946;
+}
+
+/* Carousel card backgrounds more translucent */
+.carousel .card, .carousel .rounded-2xl, .carousel .bg-white\/70, .carousel .shadow-xl, .carousel .backdrop-blur-md {
+  background: rgba(255,255,255,0.55) !important;
+  box-shadow: 0 4px 24px #7f5af022 !important;
+  backdrop-filter: blur(12px) !important;
+}
+

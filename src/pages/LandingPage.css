@@ -1,0 +1,49 @@
+/* LandingPage - calming colors, dark/light mode */
+
+.landing-bg {
+  min-height: 100vh;
+  background: radial-gradient(ellipse at 60% 40%, #232946 60%, #1a1a2e 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.5s;
+}
+.story-container {
+  background: rgba(35,41,70,0.95);
+  border-radius: 2rem;
+  box-shadow: 0 8px 32px rgba(127,90,240,0.25), 0 0 0 2px #7f5af0;
+  padding: 2.5rem 3.5rem;
+  max-width: 600px;
+  text-align: center;
+  color: #e0eafc;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.story-nav {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+.btn {
+  background: linear-gradient(90deg, #7f5af0 0%, #ff6fcb 100%);
+  color: #fff;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.7rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #7f5af044;
+  transition: background 0.3s, color 0.3s;
+}
+.btn:hover {
+  background: linear-gradient(90deg, #ff6fcb 0%, #7f5af0 100%);
+  color: #232946;
+}
+@media (max-width: 700px) {
+  .story-container {
+    padding: 1.2rem 0.5rem;
+    max-width: 98vw;
+  }
+}
